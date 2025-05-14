@@ -1,0 +1,554 @@
+/* Container principal */
+.main-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Titre Menu */
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Menu items */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Contenu (Mes cours) */
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Titre principal */
+.content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Liste des matières */
+.matières-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+/* Bouton matière */
+.matière-btn {
+  background: #4b6cb7;
+  border: none;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.matière-btn:hover {
+  background: #3b5ba0;
+  transform: scale(1.05);
+}
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #3b5998, #1c1f4a);
+  color: white;
+  padding: 20px;
+}
+
+.menu li {
+  list-style: none;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu li:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.matières-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.matière-btn {
+  background-color: #496db7;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.matière-btn:hover {
+  background-color: #3b5998;
+}
+/* Section Quiz */
+.quiz {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.quiz h3 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Liste des quiz */
+.quiz-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8efff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.quiz-item:hover {
+  background-color: #d0ddf9;
+}
+
+.quiz-item span {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Bouton de quiz */
+.start-quiz-btn {
+  background-color: #4b6cb7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-quiz-btn:hover {
+  background-color: #3b5998;
+}
+.chapitres {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.chapitres h3 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+.chapitres-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chapitre-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8efff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.chapitre-item:hover {
+  background-color: #d0ddf9;
+}
+
+.chapitre-item span {
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.voir-btn {
+  background-color: #4b6cb7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.voir-btn:hover {
+  background-color: #3b5998;
+}
+
+.retour-btn {
+  margin-top: 25px;
+  background-color: #bbb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.retour-btn:hover {
+  background-color: #999;
+}
+.profil {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #ddd;
+  margin: 20px;
+}
+
+.profil-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profil-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4CAF50;
+}
+
+.profil-infos p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 1;
+}
+.menu li {
+  position: relative; /* Hadhy mohema bch badge tjibha absolute par rapport l-li */
+  padding: 10px;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.notification-badge {
+  animation: pop 0.3s ease-in-out;
+}
+
+.global-notification {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: bounce 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+.notification-bell {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.notification-badge {
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.chapitre-item:hover {
+  background-color: #d0ddf9;
+  transform: scale(1.05); /* تكبير العنصر عند التمرير */
+}
+
+.voir-btn:hover {
+  background-color: #3b5998;
+  transform: translateX(5px); /* الحركة عند التمرير */
+}
+
+.profil {
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.profil-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.profil-card.enhanced-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f9ff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profil-img.enhanced-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #3498db;
+}
+
+.profil-infos {
+    text-align: left;
+    width: 100%;
+}
+
+.info-line {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    gap: 0.5rem;
+    color: #34495e;
+}
+
+.info-line span {
+    font-size: 1.3rem;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.modifier-btn {
+  margin-top: 1rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.modal-buttons button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: #27ae60;
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background-color: #c0392b;
+  color: white;
+}
+.enhanced-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.save-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+

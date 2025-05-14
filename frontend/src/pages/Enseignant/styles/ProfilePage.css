@@ -1,0 +1,66 @@
+.teacher-profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-profile-container h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.teacher-profile-field {
+  margin-bottom: 1rem;
+}
+
+.teacher-profile-field label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.teacher-profile-field input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.teacher-profile-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teacher-profile-buttons button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.teacher-profile-buttons .save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.teacher-profile-buttons .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.teacher-profile-buttons .edit-btn {
+  background-color: #007bff;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+}

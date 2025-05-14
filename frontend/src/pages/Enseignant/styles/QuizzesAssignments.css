@@ -1,0 +1,118 @@
+.quizzes-assignments-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    min-height: 100vh;
+  }
+  
+  .quizzes-assignments-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quizzes-assignments-inputs {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .quizzes-assignments-input,
+  .quizzes-assignments-file-input {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    flex: 1;
+  }
+  
+  .quizzes-assignments-btn {
+    padding: 0.5rem 1.2rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quizzes-assignments-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .quizzes-assignments-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quizzes-assignment-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .quizzes-assignments-edit-input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    flex: 1;
+  }
+  
+  .quizzes-assignments-save-btn,
+  .quizzes-assignments-edit-btn,
+  .quizzes-assignments-delete-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 1rem;
+  }
+  
+  .quizzes-assignments-save-btn:hover,
+  .quizzes-assignments-edit-btn:hover,
+  .quizzes-assignments-delete-btn:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .quizzes-assignments-delete-btn {
+    background-color: #ef4444;
+  }
+  
+  .quizzes-assignments-delete-btn:hover {
+    background-color: #dc2626;
+  }
+  
+  .files-list {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .files-list ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .files-list li {
+    margin: 0.5rem 0;
+  }
+  
+  .files-list a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .files-list a:hover {
+    text-decoration: underline;
+  }
+  

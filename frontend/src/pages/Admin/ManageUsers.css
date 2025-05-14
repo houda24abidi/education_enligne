@@ -1,0 +1,285 @@
+.manage-users {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background: #f4f4fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.manage-users h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.top-actions input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.user-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.user-form input,
+.user-form select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.user-form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background-color: #2980b9;
+}
+
+.user-list {
+  display: grid;
+  gap: 15px;
+}
+
+.user-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.user-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.user-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+  margin-top: 5px;
+}
+
+.badge.etudiant {
+  background-color: #27ae60;
+}
+
+.badge.admin {
+  background-color: #e67e22;
+}
+
+.user-card button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #e74c3c;
+}
+
+.user-card button:hover {
+  color: #c0392b;
+}
+
+/* Confirmation box style */
+.confirm-box {
+  background-color: #fef4f4;
+  border: 1px solid #e74c3c;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.confirm-box p {
+  color: #c0392b;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.confirm-yes,
+.confirm-no {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-yes {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.confirm-no {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+/* Overlay flou + centré */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* overlay noir semi-transparent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup centrée */
+/* === MODAL DE CONFIRMATION - STYLE BLEU UNIFIÉ === */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.confirm-modal {
+  background: #f4f4fc; /* même fond que .manage-users */
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.confirm-modal p {
+  color: #2c3e50; /* même bleu foncé des titres */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.confirm-yes,
+.confirm-no {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Bouton Oui en bleu */
+.confirm-yes {
+  background-color: #3498db; /* bleu principal */
+  color: white;
+}
+
+.confirm-yes:hover {
+  background-color: #2980b9; /* bleu plus foncé au hover */
+}
+
+/* Bouton Non en gris clair */
+.confirm-no {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+.confirm-no:hover {
+  background-color: #95a5a6;
+}
+/* === MODAL "Aucun utilisateur trouvé" === */
+
+/* === MODAL "Aucun utilisateur trouvé" === */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.confirm-modal {
+  background: #f4f4fc;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.confirm-modal p {
+  color: #e74c3c;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.confirm-no {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: #95a5a6;
+  color: white;
+}
+
+.confirm-no:hover {
+  background-color: #7f8c8d;
+}

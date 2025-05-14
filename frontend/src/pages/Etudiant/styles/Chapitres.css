@@ -1,0 +1,29 @@
+.chapitre-detail {
+  padding: 20px;
+}
+
+.cours-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cours-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.voir-btn, .retour-btn {
+  padding: 8px 12px;
+  margin-top: 10px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.retour-btn {
+  background-color: #555;
+}

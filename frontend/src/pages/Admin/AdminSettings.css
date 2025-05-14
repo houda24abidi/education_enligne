@@ -1,0 +1,133 @@
+.admin-settings {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.admin-settings h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.settings-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #374151;
+}
+
+.settings-form input {
+  padding: 0.75rem;
+  margin-top: 0.4rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease;
+}
+
+.settings-form input:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.settings-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.settings-form button:hover {
+  background-color: #4338ca;
+}
+
+.success-message {
+  color: #10b981;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+/* === MODAL DE CONFIRMATION === */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Overlay semi-transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.confirm-modal {
+  background: #f4f4fc; /* Fond clair */
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.confirm-modal p {
+  color: #2c3e50; /* Texte bleu foncé */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.confirm-yes,
+.confirm-no {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Bouton Oui en bleu */
+.confirm-yes {
+  background-color: #3498db; /* bleu principal */
+  color: white;
+}
+
+.confirm-yes:hover {
+  background-color: #2980b9; /* bleu plus foncé au hover */
+}
+
+/* Bouton Non en gris clair */
+.confirm-no {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+.confirm-no:hover {
+  background-color: #95a5a6;
+}

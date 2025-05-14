@@ -1,0 +1,41 @@
+.teacher-dashboard-container {
+    padding: 30px;
+  }
+  
+  .teacher-dashboard-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .teacher-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  
+  .teacher-dashboard-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .teacher-dashboard-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .teacher-dashboard-card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .teacher-dashboard-card-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+  }
+  

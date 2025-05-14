@@ -1,0 +1,105 @@
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #1e1e1e;
+  --text-light: #333;
+  --text-dark: #f1f1f1;
+  --input-bg-light: #f9f9f9;
+  --input-bg-dark: #2c2c2c;
+  --primary: #007bff;
+  --primary-dark: #0056b3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  .login-form {
+    background-color: #2c2c2c;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.05);
+  }
+
+  .login-form input {
+    background-color: var(--input-bg-dark);
+    border: 1px solid #555;
+    color: white;
+  }
+
+  .login-form input:focus {
+    border-color: var(--primary);
+  }
+
+  .login-form button {
+    background-color: var(--primary);
+  }
+
+  .login-form button:hover {
+    background-color: var(--primary-dark);
+  }
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 10vh auto;
+  padding: 30px 40px;
+  background-color: var(--bg-light);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: inherit;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: var(--input-bg-light);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-form {
+    margin: 20px;
+    padding: 25px;
+  }
+}

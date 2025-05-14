@@ -1,0 +1,105 @@
+/* Structure principale */
+.enseignant-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.enseignant-sidebar {
+  width: 250px;
+  background-color: #1e3a8a; /* bleu foncé */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Titre */
+.enseignant-sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Liens de navigation */
+.enseignant-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.enseignant-nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.enseignant-nav-links a:hover {
+  background-color: #3749ab;
+  color: white;
+}
+
+.enseignant-nav-links a.active {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+}
+
+/* Déconnexion */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+  padding: 10px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Contenu principal */
+.enseignant-main {
+  flex: 1;
+  background-color: #f1f5f9;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .enseignant-layout {
+    flex-direction: column;
+  }
+
+  .enseignant-sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .enseignant-nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .enseignant-main {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,15 @@
+.chapter-detail-container {
+    padding: 20px;
+  }
+  .chapter-files ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .preview-image {
+    max-width: 200px;
+    margin: 10px 0;
+  }
+  .upload-section {
+    margin-top: 20px;
+  }
+  
